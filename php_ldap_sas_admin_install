@@ -13,15 +13,15 @@ sudo vi /etc/httpd/conf.d/phpldapadmin.conf
 	
 sudo vi /etc/phpldapadmin/config.php #set config
 		- $servers->setValue('server','name','SAS Viya LDAP Admin');
-		- $servers->setValue('server','host','10.104.94.203');
-		- $servers->setValue('server','base',array('dc=bzlsas,dc=com'));
+		- $servers->setValue('server','host','IP-SERVER-LDAPSASVIYA-OR-FQDN');
+		- $servers->setValue('server','base',array('dc=ldapviya,dc=com'));
 		- $servers->setValue('login','attr','dn');
 		- $ //servers->setValue('login','attr','uid'); #Comment line
- 	    - $ //servers->setValue('login','bind_id','cn=ldapadm,dc=bzlsas,dc=com'); #Comment Line
+ 	        - $ //servers->setValue('login','bind_id','cn=admin,dc=ldapviya,dc=com'); #Comment Line
 		- $config->custom->appearance['hide_template_warning'] = true;   
 		- $config->custom->appearance['hide_template_warning'] = true;
 		- $servers->setValue('server','tls',false);
 sudo service httpd restart   #restart webserver
 
 # Acesse a aplicação
-http://10.104.94.227/ldapadmin
+http://<SERVER>/ldapadmin
