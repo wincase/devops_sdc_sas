@@ -3,6 +3,9 @@
 # Este ainda não é um script para automatizar instalação, 
 # apenas Step para montagem posterior no ambiente
 
+# DOCUMENTACAO
+# http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page
+
 sudo yum install epel-release -y
 sudo yum install phpldapadmin -y #install phpldapadmin
 	
