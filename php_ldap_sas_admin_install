@@ -22,7 +22,6 @@ sudo vi /etc/phpldapadmin/config.php #set config
 		- $ //servers->setValue('login','attr','uid'); #Comment line
  	        - $ //servers->setValue('login','bind_id','cn=admin,dc=ldapviya,dc=com'); #Comment Line
 		- $config->custom->appearance['hide_template_warning'] = true;   
-		- $config->custom->appearance['hide_template_warning'] = true;
 		- $servers->setValue('server','tls',false);
 sudo service httpd restart   #restart webserver
 
